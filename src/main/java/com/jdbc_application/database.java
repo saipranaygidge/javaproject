@@ -18,7 +18,7 @@ public class database{
     String password="saipranay";
     public void put_data(String Username, String Password, String date_of_birth) throws  Exception{
         Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con=DriverManager.getConnection("jdbc:mysql://52.149.231.191:3306/","root",this.password);
+		Connection con=DriverManager.getConnection("jdbc:mysql://52.149.230.218:3306/","root",this.password);
         Statement stmt1=con.createStatement();
         stmt1.executeUpdate( "CREATE DATABASE IF NOT EXISTS servlet_application ;");
         stmt1.executeUpdate("USE servlet_application;");
